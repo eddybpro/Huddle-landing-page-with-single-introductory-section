@@ -140,6 +140,9 @@ footer a{
         background: url('images/bg-mobile.svg');
         background-color: var(--violet);
     }
+    main .logo{
+        width:160px;
+    }
     main .container{
         grid-template-columns: 1fr;
         text-align: center;
