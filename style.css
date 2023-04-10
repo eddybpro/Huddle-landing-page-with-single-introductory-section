@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+    --white:hsl(0, 0%, 100%);
+
+}
+
+
+
+body{
+    font-size: 16px;
+    background: url('images/bg-desktop.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--violet);
+}
+
+main{
+    max-width: 900px;
+    margin: auto;
+    padding: 1rem ;
+}
+
+main .logo{
+    padding-bottom: .75rem;
+    cursor: pointer;
+}
+
+main .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+main .container > div{
+    padding: .75rem;
+}
+
+main .container .img-container img{
+    width: 100%;
+    height: 100%;
+}
+
+main .container .txt-container{
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    padding: .5rem;
+    padding-left: 1rem;
+}
+
+main .txt-container .title{
+    font-size: 1.75rem;
+    padding-bottom: 1rem;
+}
+
+main .txt-container .para{
+    font-size: 1.01rem;
+    padding-bottom: .75rem;
+}
+
+main .txt-container .btn{
+    border: none;
+    border-radius: 20px;
+    font-size: 1.01rem;
+    font-family: 'Open sans',sans-serif;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-bottom: .75rem;
+    color: var(--violet);
+    box-shadow: 2px 2px 20px var(--violet);
+}
+
+main .txt-container .btn:hover{
+    background-color: var(--Soft-Magenta);
+    color: var(--white);
+}
+
+main .icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    float: right;
+    padding: 1rem;
+}
+
+main .icons .icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    cursor: pointer;
+    transition:  all .2s ease-in-out;
+}
+
+main .icons .icon-container:hover{
+    border-color: var(--Soft-Magenta);
+}
+
+main .icons .icon-container:hover i{
+    color: var(--Soft-Magenta);
+    transition:  all .2s ease-in-out;
+
+}
+
+main .icons .icon-container i{
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+footer{
+    margin-top: 5rem;
+    text-align: center;
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+}
+
+footer a{
+    color: var(--Soft-Magenta);
+    text-decoration: none;
+}
+
+@media screen and (max-width:700px) {
+    body{
+        background: url('images/bg-mobile.svg');
+        background-color: var(--violet);
+    }
+    main .container{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    main .txt-container .btn{
+        width: 80%;
+    }
+
+    main .icons{
+        float: unset;
+    }
+
+    footer{
+        margin-top: -1rem;
+        margin-bottom: 1rem;
+        padding: 1.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
